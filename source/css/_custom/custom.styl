@@ -1,1 +1,170 @@
 // Custom styles.
+
+$c-green-main = #42b983;
+$c-green-light = #54FFB7;
+$fw-normal = normal;
+$fw-bold = bold;
+
+// 头部 导航
+#menu {
+  float: right;
+}
+
+// 选中文字的样式
+::selection {
+  background: $c-green-main;
+  color: $selection-color;
+}
+
+// 字体
+body {
+  font-weight: $fw-normal;
+  font-size: 14px;
+}
+
+// 加粗的字体
+b, strong {
+  font-weight: $fw-bold;
+}
+
+// 代码的颜色
+code {
+  color: $c-green-main;
+  font-weight: $fw-lighter;
+  font-size: inherit;
+}
+
+
+// 引用竖线颜色
+blockquote {
+  border-left-color: $c-green-main;
+}
+
+// 表格样式
+table {
+  table-layout: auto;
+}
+
+  //
+.headband {
+  display: block;
+  height: 3px;
+  background: $c-green-main;
+}
+
+  //
+.logo-line-before i, .logo-line-after i {
+  display: none;
+}
+
+// 列表页标题
+.posts-expand .post-title {
+  font-size: 20px;
+  font-weight: $fw-bold;
+}
+
+.posts-expand .post-title, .posts-expand .post-meta {
+  text-align: center;
+}
+
+// "发表于" 时间样式
+.posts-expand .post-meta time {
+   border-bottom: none;
+   cursor: none;
+}
+// 评论数样式 
+.post-meta-item-text {
+  display: none;
+}
+
+.posts-expand .post-title-link::before {
+  background-color: $c-green-main;
+}
+
+// 列表文章间距
+.posts-expand .post {
+  margin-top: 50px;
+}
+
+// 列表页文章分割先线
+.post-eof {
+//background: $green-main;
+  display: block !important;
+  margin: 50px auto 0px !important;
+  width: 80% !important;
+  background: #eee !important;
+  box-shadow: 1px -1px 2px #eee;
+}
+
+// 列表页阅读更多按钮
+.post-more-link .btn,.post-button .btn{
+  display: none;
+}
+
+.post-toc .nav .active > a, .post-toc .nav .active-current > a {
+  color: $c-green-main;
+  border-bottom-color: $c-green-main;
+}
+
+.post-toc .nav .active > a:hover {
+  color: $c-green-light;
+}
+
+.sidebar-nav .sidebar-nav-active {
+  color: $c-green-main;
+  border-bottom-color: $c-green-main;
+}
+
+.sidebar-nav .sidebar-nav-active:hover {
+  color: $c-green-light;
+}
+
+// 分页器居中
+.pagination {
+  text-align: center;
+  border-top: none;
+}
+
+.pagination .page-number.current {
+  background: $c-green-main;
+  border-top-color: $c-green-main;
+}
+
+.pagination > a:hover {
+  background: #eee;
+}
+
+.pagination .prev, .pagination .next, .pagination .page-number {
+  border-top: none;
+}
+
+// 右下角功能按钮
+.sidebar-toggle {
+  background: transparent;
+}
+
+.links-of-author a:before {
+  display: none;
+}
+
+.page-post-detail .sidebar-toggle-line, .sidebar-toggle-line {
+  background: $c-green-main;
+}
+
+.back-to-top {
+  color: $c-green-main;
+  background: transparent;
+}
+
+// 页脚
+.footer-inner {
+  text-align: center;
+  font-weight: $fw-normal;
+  font-size: smaller;
+}
+
+@media (max-width: 767px) {
+  #canvas-nest {
+    display: none;
+  }
+}
